@@ -140,6 +140,11 @@ VALUES (2, 'rolfsmit');
 INSERT INTO public.videos
 VALUES (1, 2, 'Test video');
 
+INSERT INTO public.items(name, id, price)
+VALUES 
+	('Laptop',7, 1500.00),
+ 	('Laptop',8, 15.00);
+
 SELECT * FROM public.videos 
 INNER JOIN public.users ON public.users.id = public.videos.user_id;
 
